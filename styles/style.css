@@ -223,7 +223,7 @@
     margin-bottom: 100px;
 }
 
-.section-4-div-1 > h2{
+.section-4-div-1>h2 {
     margin-bottom: 20px;
 }
 
@@ -240,22 +240,106 @@
 }
 
 
+/* Section-5 */
+
+
+
+
+
+
+
+
+
+
 
 /*-------------
       Footer  
  --------------*/
 
- .footer{
+.footer {
     background: #FFF4E7;
     width: 90rem;
-    height: 5rem;
+    height: 20rem;
     margin-left: 230px;
     border-radius: 8px;
     margin-top: 200px;
-    margin-bottom: 300px;
- }
+    margin-bottom: 100px;
+}
 
- .footer > p{
+
+.section-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+
+}
+
+.footer-title {
+    color: darkorange;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.footer-div-1-para {
+    color: #8f4c00;
+    font-size: large;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+
+.footer-div-2>h2.title {
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+.footer-div-2>p>input.other-input {
+    border: 0;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.footer-div-2>p>input.other-input:hover {
+    width: 14rem;
+    height: 2rem;
+}
+
+
+.footer-div-2>p>input.submit {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(220, 146, 9);
+    background-color: #727272;
+    border: 0;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+
+.footer-div-2>p>input.submit:hover{
+    font-size: 18px;
+    background-color: #414141;
+}
+
+.footer>p {
     text-align: center;
-    padding-top: 35px;
- }
+    padding-top: 40px;
+}
+
+
+/*------------------------------------------------------- Animation and other styles----------------------------------------------------------------- */
+
+
+.header-nav>a:hover {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+.button:hover {
+    font-weight: 800;
+    font-size: 40px;
+}
