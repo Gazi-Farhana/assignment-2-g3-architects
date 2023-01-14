@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
@@ -10,110 +10,211 @@
       header 
  ---------------*/
 
-.header{
+.header {
     background: rgba(255, 144, 14, 0.1);
     padding-top: 65px;
     padding-bottom: 65px;
 }
 
 
- .header-div{
+.header-div {
     display: flex;
     justify-content: space-around;
     margin-bottom: 102px;
-    
- }
- 
-.header-title{
+
+}
+
+.header-title {
     color: #131313;
     font-weight: 700;
     font-size: 45px;
 }
 
- .header-nav > a{
+.header-nav>a {
     text-decoration: none;
     color: #424242;
     font-weight: 500;
     font-size: 18px;
     margin-left: 50px;
- }
+}
 
- /* banner */
-.banner{
+/* banner */
+.banner {
     text-align: center;
 }
 
- .banner-title{
+.banner-title {
     color: #131313;
     font-weight: 700;
     font-size: 64px;
- }
+}
 
 
- .banner-para{
+.banner-para {
     color: #727272;
     font-weight: 400;
     font-size: 16px;
     margin-top: 30px;
     margin-bottom: 30px;
- }
+}
 
- .button{
+.button {
     color: #FFFFFF;
     background: #FF900E;
     font-weight: 600;
     font-size: 20px;
     border: 0;
     border-radius: 8px;
-    padding:25px;
+    padding: 25px;
     margin-bottom: 50px;
- }
+}
 
- .banner-img{
+.banner-img {
     justify-content: center;
- }
+}
 
 
 
- /*----------------- 
+/*----------------- 
     Section-1 
  -------------------*/
-.section-1{
+.section-1 {
     display: flex;
     gap: 75px;
     justify-content: center;
     margin-top: 65px;
     align-items: center;
 }
- .section-1-div-1{
+
+.section-1-div-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
- }
+}
 
- /* Section-1-div-2 */
- .title{
+/* Section-1-div-2 */
+.title {
     color: #131313;
     font-weight: 900;
     font-size: 45px;
- }
+}
 
- .quick-list{
+.quick-list {
     color: #727272;
     font-weight: 500;
     font-size: 45px;
- }
+}
 
- .features{
+.features {
     color: #FF900E;
     font-weight: 700;
     font-size: 45px;
- }
+}
 
- .para{
+.para {
     color: #727272;
     font-weight: 400;
     font-size: 16px;
     margin-top: 24px;
     margin-bottom: 32px;
+
+}
+
+/*---------------------
+        Section-2 
+ ----------------------*/
+
+ .section-2{
+    margin-top: 150px;
  }
+
+.section-2-div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.child-para {
+    width: 550px;
+    height: 60px;
+    /* border: 3px solid black; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.child{
+    box-shadow: 10px 10px 35px rgb(216, 212, 212);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.parent-div-2{
+    background-image: url(../images/architect.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 708px;
+    height: 982px;
+}
+
+.child-div{
+margin-top: 850px;
+padding: 100px 0;
+text-align: center;
+
+}
+
+.years-button{
+    font-size: 50px;
+}
+
+/*-----------------
+     Section-3 
+ -----------------*/
+
+ .section-3{
+    margin-top: 250px;
+ }
+
+
+.section-3-div-1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+}
+
+ .section-3-div-2{
+    display: flex;
+    justify-content: center;
+    gap:200px;
+    text-align: center;
+ }
+
+ .section-3-div-2 > div{
+    border: 2px solid orange;
+    padding: 20px;
+    border-radius: 8px;
+ }
+
+ .section-3-div-2 > div > p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+ }
+
+ .section-3-div-2 > div > p.number{
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+ }
+
+
+
+ /*--------------------
+        Section-4 
+  --------------------*/
+
+  
