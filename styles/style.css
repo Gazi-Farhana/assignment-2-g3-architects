@@ -124,9 +124,9 @@
         Section-2 
  ----------------------*/
 
- .section-2{
+.section-2 {
     margin-top: 150px;
- }
+}
 
 .section-2-div-1 {
     display: flex;
@@ -141,10 +141,10 @@
     /* border: 3px solid black; */
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
 }
 
-.child{
+.child {
     box-shadow: 10px 10px 35px rgb(216, 212, 212);
     border-radius: 10px;
     padding: 20px;
@@ -152,7 +152,7 @@
 }
 
 
-.parent-div-2{
+.parent-div-2 {
     background-image: url(../images/architect.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -160,14 +160,14 @@
     height: 982px;
 }
 
-.child-div{
-margin-top: 850px;
-padding: 100px 0;
-text-align: center;
+.child-div {
+    margin-top: 850px;
+    padding: 100px 0;
+    text-align: center;
 
 }
 
-.years-button{
+.years-button {
     font-size: 50px;
 }
 
@@ -175,46 +175,87 @@ text-align: center;
      Section-3 
  -----------------*/
 
- .section-3{
+.section-3 {
     margin-top: 250px;
- }
+}
 
 
-.section-3-div-1{
+.section-3-div-1 {
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 200px;
 }
 
- .section-3-div-2{
+.section-3-div-2 {
     display: flex;
     justify-content: center;
-    gap:200px;
+    gap: 200px;
     text-align: center;
- }
+}
 
- .section-3-div-2 > div{
+.section-3-div-2>div {
     border: 2px solid orange;
     padding: 20px;
     border-radius: 8px;
- }
+}
 
- .section-3-div-2 > div > p{
+.section-3-div-2>div>p {
     font-weight: 600;
     font-size: 20px;
     color: #727272;
- }
+}
 
- .section-3-div-2 > div > p.number{
+.section-3-div-2>div>p.number {
     font-weight: 600;
     font-size: 45px;
     color: #424242;
- }
+}
 
 
 
- /*--------------------
+/*--------------------
         Section-4 
   --------------------*/
 
-  
+.section-4-div-1 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.section-4-div-1 > h2{
+    margin-bottom: 20px;
+}
+
+.section-4-div-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-4-div-2>a {}
+
+.section-4-div-2>a>img.gray-img {
+    filter: grayscale(100%);
+}
+
+
+
+/*-------------
+      Footer  
+ --------------*/
+
+ .footer{
+    background: #FFF4E7;
+    width: 90rem;
+    height: 5rem;
+    margin-left: 230px;
+    border-radius: 8px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+ }
+
+ .footer > p{
+    text-align: center;
+    padding-top: 35px;
+ }
