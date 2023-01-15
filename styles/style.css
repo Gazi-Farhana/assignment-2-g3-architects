@@ -5,10 +5,8 @@
 
 
 
+/*-------------------------------------------------------------------Header----------------------------------------------------------------- */
 
-/*--------------
-      header 
- ---------------*/
 
 .header {
     background: rgba(255, 144, 14, 0.1);
@@ -24,10 +22,10 @@
 
 }
 
-.header-title {
-    color: #131313;
-    font-weight: 700;
-    font-size: 45px;
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-nav>a {
@@ -39,13 +37,10 @@
     transition: font-size 0.5s, font-weight 0.5s;
 }
 
-.header-nav>a:hover {
-    font-weight: 700;
-    font-size: 23px;
-}
 
-
-/* banner */
+/*----------------------------
+            banner 
+ -----------------------------*/
 .banner {
     text-align: center;
 }
@@ -88,11 +83,9 @@
     justify-content: center;
 }
 
+/*-------------------------------------------------------------------Section-1----------------------------------------------------------------- */
 
 
-/*----------------- 
-    Section-1 
- -------------------*/
 .section-1 {
     display: flex;
     gap: 75px;
@@ -135,9 +128,7 @@
 
 }
 
-/*---------------------
-        Section-2 
- ----------------------*/
+/*-------------------------------------------------------------------Section-2----------------------------------------------------------------- */
 
 .section-2 {
     margin-top: 150px;
@@ -150,10 +141,14 @@
     gap: 200px;
 }
 
+.section-2-div-1 > div > div > h2{
+    border-left: 8px solid orange;
+}
+
+
 .child-para {
     width: 550px;
     height: 60px;
-    /* border: 3px solid black; */
     overflow: hidden;
     text-overflow: ellipsis;
 
@@ -190,9 +185,7 @@
     font-size: 50px;
 }
 
-/*-----------------
-     Section-3 
- -----------------*/
+/*-------------------------------------------------------------------Section-3----------------------------------------------------------------- */
 
 .section-3 {
     margin-top: 250px;
@@ -218,6 +211,7 @@
     border: 2px solid orange;
     padding: 40px;
     border-radius: 8px;
+    transition: padding 0.5s linear;
 }
 
 .section-3-div-2>div:hover{
@@ -252,9 +246,7 @@
     color: #000000;
 }
 
-/*--------------------
-        Section-4 
-  --------------------*/
+/*-------------------------------------------------------------------Section-4----------------------------------------------------------------- */
 
 .section-4-div-1 {
     text-align: center;
@@ -283,21 +275,9 @@
 }
 
 
+/*-------------------------------------------------------------------Footer----------------------------------------------------------------- */
 
 
-
-
-
-
-
-
-
-
-
-
-/*-------------
-      Footer  
- --------------*/
 
 .footer {
     background: #FFF4E7;
@@ -316,6 +296,7 @@
     padding-top: 3rem;
 
 }
+
 
 .footer-title {
     color: darkorange;
@@ -374,9 +355,153 @@
 }
 
 
+
+
+
+
+
+
+
+
 /*------------------------------------------------------- Media Query----------------------------------------------------------------- */
 
 @media screen and (max-width:576px) {
-    
+
+.header{
+    padding-top: 0;
+    padding-bottom: 0;
+}    
+   
+
+.header-div{
+    flex-direction: column;
+}
+
+.header-nav{
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.header-nav > a{
+    margin-top: 2rem;
+    margin-right: 1rem;
+    text-align: end;
+}
+
+
+.banner-img > img{
+    max-width: 100%;
+}
+
+
+
+.section-1{
+    flex-direction: column-reverse;
+    margin: 2rem;
+}
+
+.section-1-div-1{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.section-2{
+    margin: 2rem;
+}
+
+.section-2-div-1{
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0;
+}
+
+.parent-div-2{
+max-width: 100%;
+height: 120vh;
+}
+
+.child{
+    padding: 0;
+}
+
+.small-title{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.child-div{
+    margin: 0;
+    padding: 0;
+}
+.child-para{
+    padding-top: 10px;
+    width: 100%;
+    height: 20vh;
+   text-align: center;
+}
+
+.btn{
+    padding: 0;
+    margin-top: 90vh;
+    font-size: 30px;
+}
+
+.section-3{
+    margin-top: 0;
+}
+
+.section-3-div-1{
+    margin: 2rem;
+}
+
+
+.section-3-div-2{
+    flex-direction: column;
+    gap: 50px;
+    margin: 3rem;
+}
+
+
+.section-4{
+    margin: 2rem;
+}
+
+.section-4-div-2>a>img.gray-img{
+    margin-left: 1rem;
+}
+
+.footer{
+    margin: 0;
+    max-width: 100%;
+    height: 80vh;
+}
+.section-footer{
+    flex-direction: column-reverse;
+}
+
+
+.footer-title{
+    margin-top: 3rem;
+} 
+
+.footer-div-1{
+    margin-left: 2rem;
+}
+
+.footer-div-2 > p{
+    text-align: center;
+}
+
+
+.footer-div-2>p>input.submit{
+    margin-left: 0;
+} 
+
+
+.footer-div-2>h2.title{
+    padding-left: 0;
+    text-align: center;
+}
+
+
 }
 
