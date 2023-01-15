@@ -36,7 +36,14 @@
     font-weight: 500;
     font-size: 18px;
     margin-left: 50px;
+    transition: font-size 0.5s, font-weight 0.5s;
 }
+
+.header-nav>a:hover {
+    font-weight: 700;
+    font-size: 23px;
+}
+
 
 /* banner */
 .banner {
@@ -67,7 +74,15 @@
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 50px;
+    transition: font-size 0.5s ease;
 }
+
+
+.button:hover{
+    font-size: 25px;
+}
+
+
 
 .banner-img {
     justify-content: center;
@@ -151,6 +166,10 @@
     margin-bottom: 20px;
 }
 
+.child:hover{
+    transform: rotate(2deg);
+}
+
 
 .parent-div-2 {
     background-image: url(../images/architect.png);
@@ -189,29 +208,49 @@
 .section-3-div-2 {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 100px;
     text-align: center;
 }
 
+
+
 .section-3-div-2>div {
     border: 2px solid orange;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
+}
+
+.section-3-div-2>div:hover{
+    padding: 45px;
+    border: 0;
+    box-shadow: 10px 10px 45px orange ;
 }
 
 .section-3-div-2>div>p {
     font-weight: 600;
     font-size: 20px;
     color: #727272;
+    transition: font-size 1s ease;
 }
 
-.section-3-div-2>div>p.number {
+.section-3-div-2>div>p:hover{
+    color: #212121;
+    font-size: 25px;
+    
+}
+
+
+.section-3-div-2>div>p.number{
     font-weight: 600;
     font-size: 45px;
     color: #424242;
+    transition: font-size 0.5s ease;
 }
 
-
+.section-3-div-2>div>p.number:hover{
+    font-size: 50px;
+    color: #000000;
+}
 
 /*--------------------
         Section-4 
@@ -239,8 +278,12 @@
     filter: grayscale(100%);
 }
 
+.section-4-div-2>a>img.gray-img:hover{
+    filter: grayscale(0%);
+}
 
-/* Section-5 */
+
+
 
 
 
@@ -299,6 +342,7 @@
     width: 10rem;
     height: 2rem;
     border-radius: 5px;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
 .footer-div-2>p>input.other-input:hover {
@@ -316,6 +360,7 @@
     border: 0;
     margin-top: 10px;
     margin-left: 130px;
+    transition: font-size .5s ease;
 }
 
 
@@ -330,16 +375,7 @@
 }
 
 
-/*------------------------------------------------------- Animation and other styles----------------------------------------------------------------- */
+/*------------------------------------------------------- Media Query----------------------------------------------------------------- */
 
 
-.header-nav>a:hover {
-    font-weight: 700;
-    font-size: 23px;
-}
 
-
-.button:hover {
-    font-weight: 800;
-    font-size: 40px;
-}
